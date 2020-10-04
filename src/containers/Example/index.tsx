@@ -1,9 +1,9 @@
 import React from "react";
 import ExamplePage from "components/pages/Example";
-import { useSample } from "./hooks/useSample.tsx";
+import { useExample } from "./hooks/useExample";
 
 export const ExampleContainer = () => {
-  const { isOK, setIsOK } = useSample();
+  const { isOK, setIsOK } = useExample();
 
   return <ExamplePage isOk={isOK} setIsOK={setIsOK} />;
 };
